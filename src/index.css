@@ -1,0 +1,158 @@
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #e4e4e4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+nav {
+  background: #333;
+}
+
+.logo {
+  font-weight: 600;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  color: aliceblue;
+}
+
+nav ul li,
+.wrapper {
+  padding: 10px 20px;
+}
+
+.todoItem {
+  background: #fff;
+  color: #416f70;
+  margin-bottom: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: -2px 3px 2px rgba(59, 66, 59, 0.1);
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 20px;
+  text-align: right;
+  font-weight: 400;
+  margin: 20px 0 5px;
+  color: #416f70;
+  border-bottom: 2px solid #a9b3b4;
+}
+
+.btn-delete {
+  background: rgb(235, 21, 56);
+  color: #fff;
+}
+
+/* ADD TODO */
+.form-wrapper {
+  background: #f4f4f4;
+  padding: 15px;
+  margin: 10px auto;
+  box-shadow: -2px 3px 2px rgba(59, 66, 59, 0.15);
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 5px;
+}
+
+input {
+  border: 2px solid #cccbcb;
+  color: #416f70;
+  font-size: 16px;
+  padding: 5px 7px;
+}
+
+.submit {
+  background: #418283;
+  color: #fff;
+}
+
+/* LOGIN */
+.login-wrapper {
+  max-width: 350px;
+  display: block;
+  margin: 100px auto 10px;
+  padding: 25px;
+  background: #fff;
+  box-shadow: -2px 3px 2px rgba(59, 66, 59, 0.15);
+}
+
+.login-wrapper form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-wrapper form input {
+  margin-bottom: 15px;
+  font-size: 17px;
+  padding: 8px;
+}
+
+.login-button {
+  padding: 10px;
+  font-size: 17px;
+  background: #416f70;
+  color: #fff;
+}
+
+.login-button:hover {
+  cursor: pointer;
+}
+
+.login-button:focus {
+  outline: auto;
+}
+
+.auth-toggler {
+  margin-top: 20px;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 17px;
+  color: #418283;
+}
+.auth-toggler:hover {
+  color: #0d4646;
+}
+
+/* MEDIA QUERY */
+@media only screen and (min-width: 780px) {
+  .wrapper {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  ul {
+    width: 50%;
+  }
+}
